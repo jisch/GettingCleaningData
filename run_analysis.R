@@ -15,7 +15,7 @@
 
 # Create data with the activities type
   activities <- read.table("./UCI HAR Dataset/activity_labels.txt",header=FALSE)
-  es$V1,labels=activities$V2)
+  
 
 # Create data with the features type
   features <- read.table("./UCI HAR Dataset/features.txt",header=FALSE)
@@ -36,8 +36,8 @@
   Data<-rbind(testData,trainData)
 
 # extract the mean and standard deviation for each measurement
-Data_mean<-sapply(Data,mean,na.rm=TRUE)
-Data_sd<-sapply(Data,sd,na.rm=TRUE)
+  Data_mean<-sapply(Data,mean,na.rm=TRUE)
+  Data_sd<-sapply(Data,sd,na.rm=TRUE)
 
 # Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
   install.packages("data.table")

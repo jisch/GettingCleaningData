@@ -135,6 +135,7 @@ colnames(train_sub)<-c("Subject")
 
 Merge test and training sets into one data set, including the activities.
 The Activity and Subject columns are binded to the test and train data frames, and then are both merged in the "data" data frame.
+
 testData<-cbind(test_X,test_Y)
 testData<-cbind(testData,test_sub)
 trainData<-cbind(train_X,train_Y)
@@ -151,6 +152,7 @@ Data_sd<-sapply(Data,sd,na.rm=TRUE)
 #Tidy data
 
 Creates a second, independent tidy data set with the average of each variable. The data.table package is used
+
 A tidy data table is created with the average of each measurement. The new dataset is saved in tidy.csv file.
 
 install.packages("data.table")
