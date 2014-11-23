@@ -149,7 +149,7 @@ mean() and sd() are used to extract the requested measurements.
 Data_mean<-sapply(Data,mean,na.rm=TRUE)
 Data_sd<-sapply(Data,sd,na.rm=TRUE)
 
-#Tidy data
+###Tidy data
 
 Creates a second, independent tidy data set with the average of each variable. The data.table package is used
 
